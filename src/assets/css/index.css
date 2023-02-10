@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sofia Sans", sans-serif !important;
+  min-height: 100vh;
+  background-color: #101010 !important;
+  scroll-behavior: smooth;
+  color: #FAFAFA !important;
+}

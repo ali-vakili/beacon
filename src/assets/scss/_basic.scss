@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
 
@@ -18,4 +20,23 @@ body{
   background-color: $black !important;
   scroll-behavior: smooth;
   color: #FAFAFA !important;
+}
+
+a{
+  font-family:"Sofia Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none !important;
+  color: $TenthBlack !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

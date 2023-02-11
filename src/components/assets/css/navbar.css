@@ -1,0 +1,29 @@
+div.header {
+  display: block;
+  height: 100px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  z-index: 9999;
+  transition: background-color 400ms ease;
+}
+div.header header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 120px;
+  padding-top: 44px;
+}
+div.header header div.beacon-logo {
+  height: 24px;
+}
+div.header header div.beacon-logo a.logo {
+  content: url("../logo/Beacon.svg");
+}
+div.header header a.p-link {
+  padding: 8px 32px;
+  border: 1px #637194 solid;
+  border-radius: 24px;
+  transition: background-color 400ms ease-out;
+}

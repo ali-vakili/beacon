@@ -11,9 +11,24 @@ div.header header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 120px;
+  margin: 0 120px;
   padding-top: 44px;
+}
+@media (max-width: 1200px) {
+  div.header header {
+    margin: 0 80px;
+  }
+}
+@media (max-width: 1024px) {
+  div.header header {
+    margin: 0 60px;
+  }
+}
+@media (max-width: 576px) {
+  div.header header {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 div.header header div.beacon-logo {
   height: 24px;
@@ -21,9 +36,30 @@ div.header header div.beacon-logo {
 div.header header div.beacon-logo a.logo {
   content: url("../logo/Beacon.svg");
 }
+@media (max-width: 576px) {
+  div.header header div.beacon-logo {
+    height: 18px;
+  }
+  div.header header div.beacon-logo a.logo {
+    content: url("../logo/Beacon-small.svg");
+  }
+}
 div.header header a.p-link {
-  padding: 8px 32px;
-  border: 1px #637194 solid;
-  border-radius: 24px;
-  transition: background-color 400ms ease-out;
+  padding: 8px 24px;
+  border: 1px #4D4D4D solid;
+  border-radius: 8px;
+  transition: background-color 400ms ease-out, border 400ms ease-out, color 400ms ease;
+}
+@media (min-width: 768px) {
+  div.header header a.p-link:hover {
+    color: #FAFAFA !important;
+    background-color: #637194;
+    border-color: #8D9EC7;
+  }
+}
+@media (max-width: 576px) {
+  div.header header a.p-link {
+    font-size: 16px;
+    padding: 4px 24px;
+  }
 }

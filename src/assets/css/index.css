@@ -23,7 +23,10 @@ a {
   font-weight: 600;
   font-size: 20px;
   text-decoration: none !important;
-  color: #FAFAFA !important;
+  color: #9F9F9F !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .sr-only {

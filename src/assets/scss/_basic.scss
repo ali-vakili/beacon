@@ -27,7 +27,8 @@ a{
   font-weight: 600;
   font-size: 20px;
   text-decoration: none !important;
-  color: $TenthBlack !important;
+  color: $FifthBlack !important;
+  user-select: none;
 }
 
 .sr-only {

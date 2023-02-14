@@ -1,0 +1,30 @@
+section.hero div.content h1.hero-text {
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+@media (max-width: 1366px) {
+  section.hero div.content h1.hero-text {
+    font-size: calc(1.5rem + 2.4vw);
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  section.hero div.content h1.hero-text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  section.hero div.content h1.hero-text {
+    margin-top: 24px;
+    font-size: calc(1rem + 4vw);
+  }
+}
+section.hero div.content div.intro h4.intro-text {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #DCDCDC !important;
+}
+@media (max-width: 576px) {
+  section.hero div.content div.intro h4.intro-text {
+    font-size: calc(0.8rem + 1.2vw);
+  }
+}

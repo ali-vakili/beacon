@@ -41,3 +41,25 @@ a{
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+::-moz-selection{
+  color: $NinethBlack;
+  background-color: $Primary;
+}
+
+::selection{
+  color: $NinethBlack;
+  background-color: $Primary;
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+::-webkit-scrollbar-track{
+  background-color: $black;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #1E1E1E;;
+  border-radius: 2px;
+}

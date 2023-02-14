@@ -39,3 +39,60 @@ a {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+::-moz-selection {
+  color: #F0F0F0;
+  background-color: #FBBE85;
+}
+
+::selection {
+  color: #F0F0F0;
+  background-color: #FBBE85;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #101010;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1E1E1E;
+  border-radius: 2px;
+}
+
+div.container-beacon {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+div.container-beacon section.section-beacon {
+  width: 100%;
+  max-width: 1396px;
+  margin: auto;
+}
+@media (max-width: 1636px) {
+  div.container-beacon section.section-beacon {
+    width: inherit;
+    margin: auto 120px;
+  }
+}
+@media (max-width: 1200px) {
+  div.container-beacon section.section-beacon {
+    margin: auto 80px;
+  }
+}
+@media (max-width: 1024px) {
+  div.container-beacon section.section-beacon {
+    margin: auto 60px;
+  }
+}
+@media (max-width: 576px) {
+  div.container-beacon section.section-beacon {
+    max-width: 90%;
+    margin: auto;
+  }
+}

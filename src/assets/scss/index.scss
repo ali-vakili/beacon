@@ -1,1 +1,33 @@
+@use "include-media" as *;
 @use "basic";
+
+
+div.container-beacon{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  section.section-beacon{
+    width: 100%;
+    max-width: 1396px;
+    margin: auto;
+
+    @include media("<=1636px"){
+      width: inherit;
+      margin: auto 120px;
+    }
+
+    @include media("<=Sdesktop"){
+      margin: auto 80px;
+    }
+
+    @include media("<=Laptop"){
+      margin: auto 60px;
+    }
+
+    @include media("<=Stablet"){
+      max-width: 90%;
+      margin: auto;
+    }
+  }
+}

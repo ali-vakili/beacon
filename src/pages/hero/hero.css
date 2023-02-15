@@ -1,3 +1,6 @@
+section.hero div.content {
+  display: flex;
+}
 section.hero div.content h1.hero-text {
   font-weight: 800;
   margin-bottom: 60px;

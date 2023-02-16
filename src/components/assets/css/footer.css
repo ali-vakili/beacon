@@ -1,0 +1,28 @@
+footer.footer-beacon {
+  width: 100%;
+  max-width: 1396px;
+  margin: 0 auto;
+  margin-top: 60px !important;
+}
+@media (max-width: 1636px) {
+  footer.footer-beacon {
+    width: inherit;
+    margin: 0 120px;
+  }
+}
+@media (max-width: 1200px) {
+  footer.footer-beacon {
+    margin: 0 80px;
+  }
+}
+@media (max-width: 1024px) {
+  footer.footer-beacon {
+    margin: 0 60px;
+  }
+}
+@media (max-width: 576px) {
+  footer.footer-beacon {
+    max-width: 90%;
+    margin: 0 5%;
+  }
+}

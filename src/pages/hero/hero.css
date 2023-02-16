@@ -1,7 +1,7 @@
 section.hero div.content {
   display: flex;
 }
-@media (max-width: 991px) and (min-width: 576px) {
+@media (max-width: 1366px) and (min-width: 576px) {
   section.hero div.content {
     margin-top: 100px;
   }

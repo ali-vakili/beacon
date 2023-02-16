@@ -5,6 +5,7 @@
 div.container-beacon{
   display: flex;
   flex-direction: column;
+  min-width: 320px;
   min-height: 100vh;
 
   section.section-beacon{

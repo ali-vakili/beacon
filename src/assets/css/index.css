@@ -67,6 +67,7 @@ a {
 div.container-beacon {
   display: flex;
   flex-direction: column;
+  min-width: 320px;
   min-height: 100vh;
 }
 div.container-beacon section.section-beacon {

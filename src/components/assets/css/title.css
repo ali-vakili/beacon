@@ -1,0 +1,11 @@
+div.title-container {
+  margin-top: 84px;
+}
+div.title-container h1.title-text {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+div.title-container div.description-container h4.description-text {
+  color: #767676;
+  font-weight: 500;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NavBar from './components/navbar';
 import Footer from './components/footer';
-import Hero from './pages/hero/Hero';
+import Market from './pages/market/Market';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
       <React.Fragment>
         <div className='container-beacon p-0'>
           <NavBar />
-          <Hero />
+          <Market />
           <Footer />
         </div>
       </React.Fragment>

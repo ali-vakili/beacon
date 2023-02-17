@@ -3,7 +3,7 @@ import './assets/css/navbar.css'
 
 const Navbar = () => {
   return (
-    <div id='primary-header' className='header'>
+    <div id='primary-header header-beacon' className='header'>
       <header>
         <div className='beacon-logo'>
           <a href='/' className='logo'><span class="sr-only">Logo</span></a>

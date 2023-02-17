@@ -45,10 +45,15 @@ div.header header div.beacon-logo a.logo {
   }
 }
 div.header header a.p-link {
-  padding: 8px 24px;
+  padding: 6px 24px;
   border: 1px #4D4D4D solid;
   border-radius: 8px;
   transition: background-color 400ms ease-out, border 400ms ease-out, color 400ms ease;
+}
+div.header header a.p-link:focus {
+  color: #FFF !important;
+  background-color: #637194 !important;
+  border-color: #7887AE !important;
 }
 @media (min-width: 768px) {
   div.header header a.p-link:hover {
@@ -60,6 +65,5 @@ div.header header a.p-link {
 @media (max-width: 576px) {
   div.header header a.p-link {
     font-size: 16px;
-    padding: 4px 24px;
   }
 }

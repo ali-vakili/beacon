@@ -1,3 +1,11 @@
+section.hero div.content {
+  display: flex;
+}
+@media (max-width: 1366px) and (min-width: 576px) {
+  section.hero div.content {
+    margin-top: 100px;
+  }
+}
 section.hero div.content h1.hero-text {
   font-weight: 800;
   margin-bottom: 60px;
@@ -26,5 +34,14 @@ section.hero div.content div.intro h4.intro-text {
 @media (max-width: 576px) {
   section.hero div.content div.intro h4.intro-text {
     font-size: calc(0.8rem + 1.2vw);
+  }
+}
+section.hero div.content div.hero-preview {
+  margin-top: 60px;
+}
+@media (min-width: 992px) {
+  section.hero div.content div.hero-preview {
+    margin: 0;
+    margin-bottom: 40px !important;
   }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import './market.css'
 import Title from '../../components/ui/title'
+import Indicator from '../../components/ui/indicator'
 
 class Market extends Component {
   state = {  } 
@@ -7,6 +9,7 @@ class Market extends Component {
     return (
       <section className='market section-beacon'>
         <Title title={'Market Watch'} description={'Today\'s Cryptocurrency Prices'} />
+        <Indicator />
       </section>
     );
   }

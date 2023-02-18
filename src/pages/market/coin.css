@@ -1,0 +1,72 @@
+div.coin-container {
+  margin-top: 36px;
+}
+div.coin-container div.items {
+  background-color: #1A1B25 !important;
+  padding: 16px 36px;
+}
+div.coin-container div.items div.coin-name div.name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 !important;
+  padding-left: 1rem !important;
+}
+div.coin-container div.items div.coin-name div.name h5 {
+  padding: 0 !important;
+}
+div.coin-container div.items div.coin-name div.name h5.c-name {
+  padding-right: 8px !important;
+}
+div.coin-container div.items div.item {
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+div.coin-container div.items div.item img.coin-image {
+  max-height: 48px;
+}
+@media (max-width: 1200px) {
+  div.coin-container div.items div.item img.coin-image {
+    max-height: 40px;
+  }
+}
+div.coin-container div.items div.coin-change div.change {
+  padding-right: 28px;
+}
+div.coin-container div.items div.coin-change div.change div.change-badge {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+div.coin-container div.items div.coin-change div.change div.change-badge span.polygon {
+  padding-right: 4px;
+}
+div.coin-container div.items div.coin-change div.change div.change-badge .positive {
+  content: url("./state/Positive-Polygon.svg");
+}
+div.coin-container div.items div.coin-change div.change div.change-badge .negative {
+  content: url("./state/Negative-Polygon.svg");
+}
+div.coin-container div.items div.coin-change div.change .positive-badge {
+  background-color: #193734;
+}
+div.coin-container div.items div.coin-change div.change .positive-badge h5 {
+  color: #16C784;
+}
+div.coin-container div.items div.coin-change div.change .negative-badge {
+  background-color: #3B202A;
+}
+div.coin-container div.items div.coin-change div.change .negative-badge h5 {
+  color: #EA3943;
+}
+div.coin-container div.items div.coin-change div.change .zero {
+  background-color: #32333B;
+}
+div.coin-container div.items div.coin-change div.change .zero h5 {
+  color: #B3B3B3;
+}
+div.coin-container div.items div.coin-change h5 {
+  padding: 0 !important;
+}

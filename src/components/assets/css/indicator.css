@@ -3,8 +3,32 @@ div.indicator-beacon div.items {
   flex-direction: row;
   align-items: center;
   padding: 0 36px;
-  background-color: #1E1E1E;
   border-radius: 8px;
+  background-color: #1E1E1E;
+}
+@media (max-width: 768px) {
+  div.indicator-beacon div.items {
+    padding: 0 24px;
+  }
+  div.indicator-beacon div.items div.change-24h :not(.change-badge):last-child {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  div.indicator-beacon div.items div.coin-price :last-child {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 425px) {
+  div.indicator-beacon div.items {
+    padding: 0 16px;
+  }
+  div.indicator-beacon div.items div.change-24h {
+    display: none !important;
+  }
+}
+div.indicator-beacon div.items:not(:first-child):has(.item) {
+  margin-top: 16px;
 }
 div.indicator-beacon div.items div:not(.coin-name, .coin-market-cap) h5 {
   padding-right: 28px !important;
@@ -12,6 +36,16 @@ div.indicator-beacon div.items div:not(.coin-name, .coin-market-cap) h5 {
 div.indicator-beacon div.items div:not(.coin-name) {
   margin-left: 1px;
   justify-content: flex-end;
+}
+@media (max-width: 892px) {
+  div.indicator-beacon div.items div.change-1h {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  div.indicator-beacon div.items div.coin-market-cap {
+    display: none !important;
+  }
 }
 div.indicator-beacon div.items div.item {
   display: flex;

@@ -5,8 +5,8 @@ import Market from './pages/market/Market';
 import './App.css';
 
 class App extends Component {
-  state = {  } 
-  render() { 
+  state = {}
+  render() {
     return (
       <React.Fragment>
         <div className='container-beacon p-0'>

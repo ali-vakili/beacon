@@ -5,18 +5,37 @@ div.coin-container div.items {
   background-color: #1A1B25 !important;
   padding: 16px 36px;
 }
+@media (max-width: 768px) {
+  div.coin-container div.items {
+    padding: 16px 24px;
+  }
+}
+@media (max-width: 425px) {
+  div.coin-container div.items {
+    padding: 16px;
+  }
+}
 div.coin-container div.items div.coin-name div.name {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: 0 !important;
+  margin: 0 !important;
   padding-left: 1rem !important;
+}
+@media (max-width: 576px) {
+  div.coin-container div.items div.coin-name div.name {
+    padding-left: 8px !important;
+  }
 }
 div.coin-container div.items div.coin-name div.name h5 {
   padding: 0 !important;
 }
 div.coin-container div.items div.coin-name div.name h5.c-name {
   padding-right: 8px !important;
+}
+div.coin-container div.items div.coin-name div.name h5.c-symbol {
+  color: #767676;
 }
 div.coin-container div.items div.item {
   align-items: center;

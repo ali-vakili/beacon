@@ -43,11 +43,15 @@ div.coin-container div.items div.item {
   padding: 0;
 }
 div.coin-container div.items div.item img.coin-image {
+  height: 48px;
   max-height: 48px;
+  max-width: 48px;
 }
 @media (max-width: 1200px) {
   div.coin-container div.items div.item img.coin-image {
+    height: 40px;
     max-height: 40px;
+    max-width: 40px;
   }
 }
 div.coin-container div.items div.coin-change div.change {

@@ -63,3 +63,12 @@ div.indicator-beacon div.items div.item h5 {
     font-size: 16px;
   }
 }
+
+div.specifier-container {
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  padding-top: 24px;
+  background-color: #101010;
+  border-radius: 0 0 8px 8px;
+}

@@ -1,5 +1,6 @@
 div.title-container {
   margin-top: 84px;
+  margin-bottom: 32px;
 }
 div.title-container h1.title-text {
   font-weight: 700;
@@ -8,4 +9,13 @@ div.title-container h1.title-text {
 div.title-container div.description-container h4.description-text {
   color: #767676;
   font-weight: 500;
+}
+div.title-container div.date-container {
+  background-color: #32333B;
+  border-radius: 8px;
+}
+div.title-container div.date-container h5.date {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  padding: 4px 12px;
 }

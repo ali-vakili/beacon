@@ -2,7 +2,7 @@ import "../assets/css/indicator.css";
 
 const Indicator = () => {
   return (
-    <div className="indicator-container indicator-beacon">
+    <div className="specifier-container indicator-beacon">
       <div className="indicator items">
         <div className="coin-name item">
           <h5>Coin Name</h5>

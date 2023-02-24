@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom'
 import '../assets/css/button.css'
 
 
-const Button = ({value , classes}) => {
+const Button = ({value , classes, location}) => {
   return ( 
-    <button type="button" className={`btn btn-lg ${classes}`}>
-      {value}
-    </button>
+    <Link to={location}>
+      <button type="button" className={`btn btn-lg ${classes}`}>
+        {value}
+      </button>
+    </Link>
   );
 }
 

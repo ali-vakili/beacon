@@ -14,7 +14,7 @@ const Hero = () => {
             </div>
             <div className='action w-100'>
               <div className='d-grid gap-2 col-2 mx-auto ms-0 mt-4'>
-                <Button value={'Market'} classes={'hero-market'} />
+                <Button value={'Market'} classes={'hero-market'} location={'/market'}/>
               </div>
             </div>
           </div>

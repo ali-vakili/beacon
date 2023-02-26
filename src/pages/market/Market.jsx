@@ -4,6 +4,7 @@ import getFetch from "../../lib/getFetch";
 import Title from "../../components/ui/title";
 import Indicator from "../../components/ui/indicator";
 import Skeleton from "../../components/ui/skeleton";
+import Error from "../../components/ui/error";
 import Pagination from "./pagination"
 import Coin from "./coin";
 
@@ -28,7 +29,8 @@ class Market extends Component {
   };
 
   fetchData = async () => {
-    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${this.state.coinPerPage}&page=${this.state.page}&sparkline=false&price_change_percentage=1h`;
+    const { page, coinPerPage } = this.state;
+    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${coinPerPage}&page=${page}&sparkline=false&price_change_percentage=1h`;
     try {
       this.setState({ isLoading: true });
       const coins = await getFetch(url);
@@ -41,6 +43,7 @@ class Market extends Component {
   render() {
     const { coins, isLoading, error } = this.state;
     const totalPage = Math.ceil(this.state.totalCoins / this.state.coinPerPage);
+    document.title = 'Cryptocurrency Market | Crypto Prices';
     
     return (
       <section className="market section-beacon">
@@ -66,6 +69,7 @@ class Market extends Component {
               />
             </div>
           )}
+          {error && <Error message={"Something went wrong! Please Come Back later :("} />}
         </div>
       </section>
     );

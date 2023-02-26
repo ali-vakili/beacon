@@ -1,0 +1,18 @@
+div.error-beacon div.error-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  padding: 36px 24px;
+  background-color: #3B202A;
+  color: #EA3943;
+  border-radius: 16px;
+}
+@media (max-width: 425px) {
+  div.error-beacon div.error-content {
+    padding: 24px 16px;
+  }
+}
+div.error-beacon div.error-content h4.error-message {
+  font-weight: 600;
+}

@@ -1,0 +1,125 @@
+div.skeleton-beacon {
+  margin-top: 36px;
+}
+div.skeleton-beacon div.coin-skeleton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 36px;
+  border-radius: 8px;
+  background-color: #1A1B25 !important;
+}
+@media (max-width: 768px) {
+  div.skeleton-beacon div.coin-skeleton {
+    padding: 16px 24px;
+  }
+  div.skeleton-beacon div.coin-skeleton div.change-24h :last-child {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  div.skeleton-beacon div.coin-skeleton div.coin-price :last-child {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 425px) {
+  div.skeleton-beacon div.coin-skeleton {
+    padding: 16px;
+  }
+  div.skeleton-beacon div.coin-skeleton div.change-24h {
+    display: none !important;
+  }
+}
+div.skeleton-beacon div.coin-skeleton div:not(.coin-name, .coin-market-cap) div {
+  margin-right: 28px !important;
+}
+div.skeleton-beacon div.coin-skeleton div:not(:first-child) {
+  margin-left: 1px;
+  justify-content: flex-end;
+}
+div.skeleton-beacon div.coin-skeleton div.skeleton {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  max-width: 264px;
+  padding: 0;
+}
+div.skeleton-beacon div.coin-skeleton div.coin-name {
+  margin: 0 !important;
+}
+div.skeleton-beacon div.coin-skeleton div.coin-name div.skeleton-image {
+  width: 48px;
+  height: 48px;
+  max-height: 48px;
+  border-radius: 50px;
+  background: linear-gradient(290deg, rgba(50, 51, 59, 0) 12%, #32333B 50%, rgba(50, 51, 59, 0) 88%);
+  background-size: 850%;
+  animation: skeleton-animation 4s infinite;
+}
+@media (max-width: 1200px) {
+  div.skeleton-beacon div.coin-skeleton div.coin-name div.skeleton-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+div.skeleton-beacon div.coin-skeleton div.coin-name div.skeleton-name {
+  height: 20px;
+  max-width: 96px;
+  margin-left: 1rem;
+}
+@media (max-width: 1024px) {
+  div.skeleton-beacon div.coin-skeleton div.coin-name div.skeleton-name {
+    max-width: 80px;
+  }
+}
+@media (max-width: 576px) {
+  div.skeleton-beacon div.coin-skeleton div.coin-name div.skeleton-name {
+    max-width: 60px;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 892px) {
+  div.skeleton-beacon div.coin-skeleton div.change-1h {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  div.skeleton-beacon div.coin-skeleton div.coin-market-cap {
+    display: none;
+  }
+}
+div.skeleton-beacon div.coin-skeleton .skeleton-cover {
+  width: 100%;
+  border-radius: 4px;
+  background: linear-gradient(272deg, rgba(50, 51, 59, 0) 0%, #32333B 50%, rgba(50, 51, 59, 0) 100%);
+  background-size: 3000%;
+  animation: skeleton-animation 4s infinite;
+}
+div.skeleton-beacon div.coin-skeleton div.skeleton-small {
+  height: 20px;
+  max-width: 80px;
+}
+@media (max-width: 576px) {
+  div.skeleton-beacon div.coin-skeleton div.skeleton-small {
+    max-width: 60px;
+  }
+}
+div.skeleton-beacon div.coin-skeleton div.skeleton-larg {
+  height: 20px;
+  max-width: 136px;
+}
+@media (max-width: 1024px) {
+  div.skeleton-beacon div.coin-skeleton div.skeleton-larg {
+    max-width: 120px;
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}

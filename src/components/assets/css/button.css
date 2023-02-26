@@ -1,7 +1,7 @@
 button.hero-market {
   height: 44px;
   background-color: #637194;
-  color: #FAFAFA;
+  color: #FAFAFA !important;
   font-size: 18px;
   transition: background-color 600ms ease-out, border 400ms ease-out, color 400ms ease;
 }

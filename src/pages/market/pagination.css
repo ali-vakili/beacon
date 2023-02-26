@@ -1,0 +1,84 @@
+div.pagination-beacon div.pages {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+div.pagination-beacon div.pages button.page-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #FAFAFA;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 4px;
+  border-radius: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  outline: none;
+  border: none;
+}
+@media (max-width: 425px) {
+  div.pagination-beacon div.pages button.page-number {
+    margin: 0 2px;
+  }
+}
+div.pagination-beacon div.pages button.change-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #1E1E1E;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  transition: background-color 200ms ease-out, color 200ms ease;
+}
+div.pagination-beacon div.pages button.change-page:hover, div.pagination-beacon div.pages button.change-page:focus {
+  background-color: #32333B;
+}
+div.pagination-beacon div.pages button.previous-page {
+  margin-right: 12px;
+}
+div.pagination-beacon div.pages button.previous-page:before {
+  content: url("./assets/Previous-Page-Chevron.svg");
+  height: 24px;
+}
+@media (max-width: 425px) {
+  div.pagination-beacon div.pages button.previous-page {
+    margin-right: 8px;
+  }
+}
+div.pagination-beacon div.pages button.next-page {
+  margin-left: 12px;
+}
+div.pagination-beacon div.pages button.next-page:before {
+  content: url("./assets/Next-Page-Chevron.svg");
+  height: 24px;
+}
+@media (max-width: 425px) {
+  div.pagination-beacon div.pages button.next-page {
+    margin-left: 8px;
+  }
+}
+div.pagination-beacon div.pages span.ellipsis {
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+  content: url("./assets/Ellipsis.svg");
+}
+@media (max-width: 425px) {
+  div.pagination-beacon div.pages span.ellipsis {
+    margin: 0 2px;
+  }
+}
+div.pagination-beacon div.pages .current {
+  background-color: #32333B;
+}
+div.pagination-beacon div.pages .page {
+  background-color: #1A1B25;
+}

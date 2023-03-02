@@ -67,10 +67,10 @@ div.coin-container div.items div.coin-change div.change div.change-badge span.po
   padding-right: 4px;
 }
 div.coin-container div.items div.coin-change div.change div.change-badge .positive {
-  content: url("./assets/Positive-Polygon.svg");
+  content: url("../../components/assets/polygon/Polygon-Positive.svg");
 }
 div.coin-container div.items div.coin-change div.change div.change-badge .negative {
-  content: url("./assets/Negative-Polygon.svg");
+  content: url("../../components/assets/polygon/Polygon-Negative.svg");
 }
 div.coin-container div.items div.coin-change div.change .positive-badge {
   background-color: #193734;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { formatPrice, getBageClasses, getPolygonClasses } from '../../utils/format'
 import CoinBasics from './coinBasics'
 import CoinInformation from './coinInformation'
 import './coin-detail.css'
@@ -11,11 +10,6 @@ class CoinDetail extends Component {
     const {
       market_data
     } = coinData;
-
-    // const {
-    //   market_cap_rank,
-    //   current_price:{ usd:current_price_usd },
-    // } = market_data
 
     return (
       <div className="coin-detail-container indicator-beacon">

@@ -34,9 +34,9 @@ class Market extends Component {
     try {
       this.setState({ isLoading: true });
       const coins = await getFetch(url);
-      this.setState({ coins, isLoading: false });
+      this.setState({ coins, isLoading: false, error: null });
     } catch (error) {
-      this.setState({ error, isLoading: false });
+      this.setState({ error, isLoading: false, coins: null });
     }
   }
 

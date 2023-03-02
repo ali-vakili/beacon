@@ -3,6 +3,11 @@ div.pagination-beacon div.pages {
   justify-content: flex-end;
   margin-top: 24px;
 }
+@media (max-width: 576px) {
+  div.pagination-beacon div.pages {
+    justify-content: center;
+  }
+}
 div.pagination-beacon div.pages button.page-number {
   display: inline-flex;
   align-items: center;
@@ -21,9 +26,11 @@ div.pagination-beacon div.pages button.page-number {
   outline: none;
   border: none;
 }
-@media (max-width: 425px) {
+@media (max-width: 375px) {
   div.pagination-beacon div.pages button.page-number {
-    margin: 0 2px;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
   }
 }
 div.pagination-beacon div.pages button.change-page {
@@ -41,6 +48,12 @@ div.pagination-beacon div.pages button.change-page {
 div.pagination-beacon div.pages button.change-page:hover, div.pagination-beacon div.pages button.change-page:focus {
   background-color: #32333B;
 }
+@media (max-width: 375px) {
+  div.pagination-beacon div.pages button.change-page {
+    width: 28px;
+    height: 28px;
+  }
+}
 div.pagination-beacon div.pages button.previous-page {
   margin-right: 12px;
 }
@@ -48,22 +61,12 @@ div.pagination-beacon div.pages button.previous-page:before {
   content: url("./assets/Previous-Page-Chevron.svg");
   height: 24px;
 }
-@media (max-width: 425px) {
-  div.pagination-beacon div.pages button.previous-page {
-    margin-right: 8px;
-  }
-}
 div.pagination-beacon div.pages button.next-page {
   margin-left: 12px;
 }
 div.pagination-beacon div.pages button.next-page:before {
   content: url("./assets/Next-Page-Chevron.svg");
   height: 24px;
-}
-@media (max-width: 425px) {
-  div.pagination-beacon div.pages button.next-page {
-    margin-left: 8px;
-  }
 }
 div.pagination-beacon div.pages span.ellipsis {
   width: 24px;

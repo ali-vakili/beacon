@@ -31,6 +31,11 @@ a{
   user-select: none;
 }
 
+input{
+  border: none !important;
+  outline: none !important;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

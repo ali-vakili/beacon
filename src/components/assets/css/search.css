@@ -1,0 +1,60 @@
+div.serach-container {
+  margin-top: 40px;
+}
+div.serach-container div.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 80px;
+  max-width: 544px;
+}
+@media (max-width: 576px) {
+  div.serach-container div.search {
+    max-height: 68px;
+  }
+}
+div.serach-container div.search input.search-input {
+  max-height: 80px;
+  width: 100%;
+  color: #FAFAFA;
+  caret-color: #A47549;
+  padding: 24px 36px;
+  font-size: 24px;
+  border-radius: 8px 0 0 8px;
+  background-color: #26262A;
+}
+@media (max-width: 576px) {
+  div.serach-container div.search input.search-input {
+    font-size: 20px;
+    padding: 16px 24px;
+  }
+}
+@media (max-width: 425px) {
+  div.serach-container div.search input.search-input {
+    padding: 16px;
+  }
+}
+div.serach-container div.search button.search-button {
+  height: 100%;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FBBE85;
+  border-radius: 0 8px 8px 0;
+  background-color: #1D1D1D;
+  transition: background-color 400ms ease-out, color 400ms ease;
+}
+div.serach-container div.search button.search-button:focus {
+  background-color: #32333B !important;
+  border-color: transparent !important;
+}
+@media (max-width: 576px) {
+  div.serach-container div.search button.search-button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  div.serach-container div.search button.search-button {
+    padding: 0 16px;
+  }
+}

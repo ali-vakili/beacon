@@ -16,3 +16,7 @@ div.error-beacon div.error-content {
 div.error-beacon div.error-content h4.error-message {
   font-weight: 600;
 }
+div.error-beacon div.error-content h4.extra-message {
+  text-decoration: underline;
+  font-weight: 700;
+}

@@ -4,6 +4,7 @@ import NavBar from './components/navbar';
 import Footer from './components/footer';
 import Hero from './pages/hero/Hero';
 import Market from './pages/market/Market';
+import Explore from './pages/explore/Explore';
 import './App.css';
 
 class App extends Component {
@@ -12,11 +13,12 @@ class App extends Component {
     return (
       <React.Fragment>
         <div className='container-beacon p-0'>
-          <NavBar />
           <BrowserRouter>
+            <NavBar />
             <Routes>
               <Route exact path="/" element={<Hero />} />
               <Route exact path="/market" element={<Market />} />
+              <Route exact path="/explore" element={<Explore />} />
             </Routes>
           </BrowserRouter>
           <Footer />

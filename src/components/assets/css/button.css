@@ -28,7 +28,7 @@ button.hero-market:focus {
 }
 @media (max-width: 767px) {
   button.hero-market {
-    padding: 8px calc(1rem + 4vw) !important;
+    padding: 8px calc(1.4rem + 4vw) !important;
   }
   button.hero-market:hover {
     background-color: #637194;

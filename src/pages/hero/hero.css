@@ -1,13 +1,9 @@
 section.hero div.content {
   display: flex;
 }
-@media (max-width: 1366px) and (min-width: 576px) {
-  section.hero div.content {
-    margin-top: 100px;
-  }
-}
 section.hero div.content h1.hero-text {
   font-weight: 800;
+  margin-top: 84px;
   margin-bottom: 60px;
 }
 @media (max-width: 1366px) {
@@ -22,8 +18,7 @@ section.hero div.content h1.hero-text {
 }
 @media (max-width: 576px) {
   section.hero div.content h1.hero-text {
-    margin-top: 24px;
-    font-size: calc(1rem + 4vw);
+    font-size: calc(1.2rem + 4vw);
   }
 }
 section.hero div.content div.intro h4.intro-text {
@@ -42,6 +37,6 @@ section.hero div.content div.hero-preview {
 @media (min-width: 992px) {
   section.hero div.content div.hero-preview {
     margin: 0;
-    margin-bottom: 40px !important;
+    margin-top: 20px !important;
   }
 }

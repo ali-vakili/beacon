@@ -1,7 +1,5 @@
 const formatPrice = price => {
-  if (price === null || price === undefined || price === NaN){
-    return "None";
-  }
+  if (price === null || price === undefined || price === isNaN) return "None";
   const absolutePrice = Math.abs(price);
   const [integer, decimal] = String(absolutePrice).split(".");
   const formattedDecimal = decimal ? decimal.slice(0, 2) : null;

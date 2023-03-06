@@ -1,17 +1,29 @@
 section.hero div.content {
+  position: relative;
   display: flex;
+  margin-top: 20px;
+}
+@media (min-width: 577px) {
+  section.hero div.content {
+    margin-top: 60px !important;
+  }
+}
+@media (max-width: 991px) {
+  section.hero div.content div.content-row {
+    justify-content: center;
+  }
 }
 section.hero div.content h1.hero-text {
   font-weight: 800;
   margin-top: 84px;
-  margin-bottom: 60px;
+  margin-bottom: 16px;
 }
 @media (max-width: 1366px) {
   section.hero div.content h1.hero-text {
     font-size: calc(1.5rem + 2.4vw);
   }
 }
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) {
   section.hero div.content h1.hero-text {
     font-size: 3rem;
   }
@@ -21,10 +33,18 @@ section.hero div.content h1.hero-text {
     font-size: calc(1.2rem + 4vw);
   }
 }
+section.hero div.content div.intro {
+  margin-bottom: 44px;
+}
 section.hero div.content div.intro h4.intro-text {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   color: #DCDCDC !important;
+}
+@media (max-width: 768px) {
+  section.hero div.content div.intro h4.intro-text {
+    margin-bottom: 32px;
+  }
 }
 @media (max-width: 576px) {
   section.hero div.content div.intro h4.intro-text {
@@ -36,7 +56,21 @@ section.hero div.content div.hero-preview {
 }
 @media (min-width: 992px) {
   section.hero div.content div.hero-preview {
-    margin: 0;
+    position: absolute;
+    right: -16%;
+    z-index: -1;
     margin-top: 20px !important;
+  }
+  section.hero div.content div.hero-preview img {
+    transform: scale(2.2);
+  }
+}
+@media (min-width: 1940px) {
+  section.hero div.content div.hero-preview {
+    right: 0;
+    width: 50%;
+  }
+  section.hero div.content div.hero-preview img {
+    transform: scale(1);
   }
 }

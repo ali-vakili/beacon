@@ -74,6 +74,7 @@ div.container-beacon {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 div.container-beacon section.section-beacon {
   width: 100%;

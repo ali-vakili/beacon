@@ -3,6 +3,7 @@ button.hero-market {
   background-color: #637194;
   color: #FAFAFA !important;
   font-size: 18px;
+  font-weight: 600;
   transition: background-color 600ms ease-out, border 400ms ease-out, color 400ms ease;
 }
 button.hero-market:focus {

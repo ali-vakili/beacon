@@ -14,9 +14,11 @@ div.error-beacon div.error-content {
   }
 }
 div.error-beacon div.error-content h4.error-message {
+  display: inline;
   font-weight: 600;
 }
 div.error-beacon div.error-content h4.extra-message {
+  display: inline;
   text-decoration: underline;
   font-weight: 700;
 }

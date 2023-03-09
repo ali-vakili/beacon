@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./market.css";
 import getFetch from "../../lib/getFetch";
 import Title from "../../components/ui/title";
 import Indicator from "../../components/ui/indicator";
@@ -7,6 +6,7 @@ import Skeleton from "../../components/ui/skeleton";
 import Error from "../../components/ui/error";
 import Pagination from "./pagination"
 import Coin from "./coin";
+import "./market.css";
 
 class Market extends Component {
 

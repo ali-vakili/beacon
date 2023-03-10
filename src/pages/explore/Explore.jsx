@@ -58,7 +58,7 @@ class Explore extends Component {
                   isClickToPauseDisabled: true
                 }}
               />
-              <h4>Loading...</h4>
+              <h4>Searching...</h4>
             </div>
           }
           {coinData && (

@@ -1,3 +1,9 @@
+div.indicator-beacon a.coin-detail-link {
+  color: inherit !important;
+}
+div.indicator-beacon a.coin-detail-link:not(:first-child) div.items {
+  margin-top: 16px;
+}
 div.indicator-beacon div.items {
   display: flex;
   flex-direction: row;
@@ -26,9 +32,6 @@ div.indicator-beacon div.items {
   div.indicator-beacon div.items div.change-24h {
     display: none !important;
   }
-}
-div.indicator-beacon div.items:not(:first-child):has(.item) {
-  margin-top: 16px;
 }
 div.indicator-beacon div.items div:not(.coin-name, .coin-market-cap) h5 {
   padding-right: 28px !important;

@@ -109,10 +109,10 @@ div.coin-detail-container div.coin-detail div.coin-basics div.current-price div.
   padding-right: 4px;
 }
 div.coin-detail-container div.coin-detail div.coin-basics div.current-price div.change div.change-badge .positive {
-  content: url("../../components/assets/polygon/Polygon-Positive.svg");
+  content: url("../polygon/Polygon-Positive.svg");
 }
 div.coin-detail-container div.coin-detail div.coin-basics div.current-price div.change div.change-badge .negative {
-  content: url("../../components/assets/polygon/Polygon-Negative.svg");
+  content: url("../polygon/Polygon-Negative.svg");
 }
 div.coin-detail-container div.coin-detail div.coin-basics div.current-price div.change .positive-badge {
   background-color: #193734;
@@ -206,4 +206,20 @@ div.coin-detail-container div.coin-detail div.coin-market-informations div.detai
 }
 div.coin-detail-container div.coin-detail div.coin-market-informations div.detail-card div.detail-body div.detail .zero {
   color: #B3B3B3;
+}
+
+div.coin-description {
+  margin-top: 60px;
+}
+div.coin-description h2.coin-description-title {
+  margin-bottom: 20px;
+}
+div.coin-description p.coin-description-paragraph {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media (max-width: 576px) {
+  div.coin-description p.coin-description-paragraph {
+    font-size: 16px;
+  }
 }

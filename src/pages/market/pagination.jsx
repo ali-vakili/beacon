@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import "./pagination.css";
 
 const Pagination = ({
@@ -11,6 +12,7 @@ const Pagination = ({
 }) => {
   const [pages, setPages] = useState([]);
   const [selectedPages, setTotalPages] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const result = [];
@@ -24,6 +26,11 @@ const Pagination = ({
     const totalPages = getPages(pages, currentPage, totalPage);
     setTotalPages(totalPages);
   }, [pages]);
+
+  function handlePageChange(page) {
+    changePage(page);
+    navigate(`/market?page=${page}`);
+  }
 
   return (
     <div className="pagination-container pagination-beacon">
@@ -42,7 +49,7 @@ const Pagination = ({
                   <button
                     key={page}
                     onClick={() => {
-                      changePage(page);
+                      handlePageChange(page);
                     }}
                     className={getPageClasses(page, currentPage)}
                   >

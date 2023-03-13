@@ -11,7 +11,7 @@ import "./market.css";
 class Market extends Component {
 
   componentDidMount() {
-    this.fetchData()
+    this.fetchData();
   }
 
   componentDidUpdate(prevProps, prevState) {

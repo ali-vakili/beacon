@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CoinBasics from './coinBasics'
 import CoinInformation from './coinInformation'
-import './coin-detail.css'
+import '../assets/css/coin-detail.css'
 
 class CoinDetail extends Component {
 

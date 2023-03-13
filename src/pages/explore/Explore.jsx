@@ -3,9 +3,9 @@ import Title from "../../components/ui/title";
 import Search from "../../components/ui/search";
 import Error from "../../components/ui/error";
 import getFetch from "../../lib/getFetch";
-import CoinDetail from "./coinDetail";
+import CoinDetail from "../../components/coin-detail/coinDetail";
 import Lottie from 'lottie-react';
-import loading from './assets/Loading.json'
+import loading from '../../components/assets/lottie/Loading.json'
 import './explore.css'
 
 class Explore extends Component {
@@ -58,7 +58,7 @@ class Explore extends Component {
                   isClickToPauseDisabled: true
                 }}
               />
-              <h4>Loading...</h4>
+              <h4>Searching...</h4>
             </div>
           }
           {coinData && (
@@ -66,7 +66,7 @@ class Explore extends Component {
               <div className='coin-result'>
                 <h2>Results for <span className='search-coin'>{ this.state.coinName }</span></h2>
               </div>
-              <CoinDetail coinData={coinData} /> 
+              <CoinDetail coinData={coinData} />
             </>
           )}
         </div>

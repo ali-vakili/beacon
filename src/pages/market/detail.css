@@ -1,0 +1,17 @@
+div.coin-detai-result div.back-current-route {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+div.coin-detai-result div.back-current-route a.previous-route {
+  font-weight: 400;
+  color: #B3B3B3 !important;
+}
+div.coin-detai-result div.back-current-route span.forward-arrow {
+  padding: 0 8px;
+}
+div.coin-detai-result div.back-current-route h5.route-coin-name {
+  margin: 0;
+  font-weight: 400;
+  color: #FAFAFA !important;
+}

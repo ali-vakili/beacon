@@ -1,95 +1,87 @@
-import React, { Component } from "react";
-import getFetch from "../../lib/getFetch";
-import Title from "../../components/ui/title";
-import Indicator from "../../components/ui/indicator";
-import Skeleton from "../../components/ui/skeleton";
-import Error from "../../components/ui/error";
-import Pagination from "./pagination"
-import Coin from "./coin";
-import "./market.css";
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import getFetch from '../../lib/getFetch';
+import Title from '../../components/ui/title';
+import Indicator from '../../components/ui/indicator';
+import Skeleton from '../../components/ui/skeleton';
+import Error from '../../components/ui/error';
+import Pagination from './pagination';
+import Coin from './coin';
+import './market.css';
 
-class Market extends Component {
+const Market = () => {
+  const location = useLocation();
+  const currentPage = parseInt(location.search.replace("?page=", "")) || 1;
 
-  componentDidMount() {
-    this.fetchData();
-  }
+  const [page, setPage] = useState(currentPage);
+  const [coinPerPage] = useState(20);
+  const [coins, setCoins] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const totalCoins = 240;
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.page !== this.state.page) {
-      this.fetchData();
-    }
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${coinPerPage}&page=${page}&sparkline=false&price_change_percentage=1h`;
+      try {
+        setIsLoading(true);
+        const coins = await getFetch(url);
+        setCoins(coins);
+        setIsLoading(false);
+        setError(null);
+      } catch (error) {
+        setError(error);
+        setIsLoading(false);
+        setCoins(null);
+      }
+    };
+    fetchData();
+  }, [page, coinPerPage]);
 
-  state = {
-    page: 1,
-    coinPerPage:20,
-    coins: null,
-    isLoading: true,
-    totalCoins:240,
+  const totalPage = Math.ceil(totalCoins / coinPerPage);
+  document.title = 'Cryptocurrency Market | Crypto Prices';
+
+  const changePage = (page) => {
+    setPage(page);
   };
 
-  fetchData = async () => {
-    const { page, coinPerPage } = this.state;
-    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${coinPerPage}&page=${page}&sparkline=false&price_change_percentage=1h`;
-    try {
-      this.setState({ isLoading: true });
-      const coins = await getFetch(url);
-      this.setState({ coins, isLoading: false, error: null });
-    } catch (error) {
-      this.setState({ error, isLoading: false, coins: null });
-    }
-  }
+  const previousPage = () => {
+    let newPage = page;
+    newPage = page > 1 ? newPage = page - 1 : page;
+    setPage(newPage);
+  };
 
-  render() {
-    const { coins, isLoading, error } = this.state;
-    const totalPage = Math.ceil(this.state.totalCoins / this.state.coinPerPage);
-    document.title = 'Cryptocurrency Market | Crypto Prices';
-    
-    return (
-      <section className="market section-beacon">
-        <div className="market-container row gx-0">
-          <Title
-            title={"Market Watch"}
-            description={"Today's Cryptocurrency Prices"}
-          />
-          <Indicator />
-          {isLoading && <Skeleton />}
-          {coins && (
-            <div className="coin-container indicator-beacon">
-              {coins.map((coin) => (
-                <Coin key={coin.id} coin={coin} />
-              ))}
-              <Pagination
-                currentPage={this.state.page}
-                totalPage={totalPage}
-                perPage={this.state.coinPerPage}
-                changePage={this.changePage}
-                previousPage={this.previousPage}
-                nextPage={this.nextPage}
-              />
-            </div>
-          )}
-          {error && <Error message={"Something went wrong! Please Come Back later :("} />}
-        </div>
-      </section>
-    );
-  }
+  const nextPage = (lastPage) => {
+    let newPage = page;
+    newPage = page < lastPage ? newPage = page + 1 : page;
+    setPage(newPage);
+  };
 
-  changePage = page =>{
-    this.setState({ page });
-  }
-
-  previousPage = () => {
-    let{ page } = this.state;
-    page = page > 1 ? page = page - 1 : page;
-    this.setState({ page });
-  }
-
-  nextPage = (lastPage) => {
-    let{ page } = this.state;
-    page = page < lastPage ? page = page + 1 : page;
-    this.setState({ page });
-  }
-}
+  return (
+    <section className="market section-beacon">
+      <div className="market-container row gx-0">
+        <Title title={'Market Watch'} description={"Today's Cryptocurrency Prices"} />
+        <Indicator />
+        {isLoading && <Skeleton />}
+        {coins && (
+          <div className="coin-container indicator-beacon">
+            {coins.map((coin) => (
+              <Coin key={coin.id} coin={coin} />
+            ))}
+            <Pagination
+              currentPage={page}
+              totalPage={totalPage}
+              perPage={coinPerPage}
+              changePage={changePage}
+              previousPage={previousPage}
+              nextPage={nextPage}
+            />
+          </div>
+        )}
+        {error && <Error message={'Something went wrong! Please Come Back later :('} />}
+      </div>
+    </section>
+  );
+};
 
 export default Market;

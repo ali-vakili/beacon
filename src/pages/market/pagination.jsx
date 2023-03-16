@@ -27,10 +27,10 @@ const Pagination = ({
     setTotalPages(totalPages);
   }, [pages]);
 
-  function handlePageChange(page) {
-    changePage(page);
-    navigate(`/market?page=${page}`);
-  }
+  useEffect(() => {
+    currentPage !== 1 ? navigate(`/market/?page=${currentPage}`) : navigate(`/market`);
+  }, [currentPage]);
+
 
   return (
     <div className="pagination-container pagination-beacon">
@@ -49,7 +49,7 @@ const Pagination = ({
                   <button
                     key={page}
                     onClick={() => {
-                      handlePageChange(page);
+                      changePage(page)
                     }}
                     className={getPageClasses(page, currentPage)}
                   >

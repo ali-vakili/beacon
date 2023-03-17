@@ -68,10 +68,16 @@ div.indicator-beacon div.items div.item h5 {
 }
 
 div.specifier-container {
-  position: sticky;
+  position: sticky !important;
   top: 0px;
   overflow: hidden;
   padding-top: 24px;
+  background-color: #101010;
+  border-radius: 0 0 8px 8px;
+}
+
+div.ns-sticky-element {
+  position: sticky !important;
   background-color: #101010;
   border-radius: 0 0 8px 8px;
 }

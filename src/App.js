@@ -16,7 +16,7 @@ const App = () => {
   const isHeroRoute = location.pathname === '/' ? 'landing-page-beacon' : '';
 
   return (
-    <ScrollContainer>
+    <ScrollContainer activeSmoothScrollOnTouchDevice={true}> 
       <div className={`container-beacon p-0 ${isHeroRoute}`}>
         <NavBar />
         <Routes>

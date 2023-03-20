@@ -215,6 +215,7 @@ div.coin-description h2.coin-description-title {
   margin-bottom: 20px;
 }
 div.coin-description p.coin-description-paragraph {
+  font-family: "Titillium Web", sans-serif;
   font-size: 20px;
   font-weight: 300;
 }

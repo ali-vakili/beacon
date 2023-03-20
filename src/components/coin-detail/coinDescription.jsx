@@ -15,7 +15,7 @@ const CoinDescription = ({coinData}) => {
         <h2 className="coin-description-title">What Is {name} ({symbol.toUpperCase()})?</h2>
 
         {firstTwoParagraphs.map((paragraph, index) => (
-          <p key={index} className='coin-description-paragraph'>{paragraph.replace(/<\/?a[^>]*>/g, "")}</p>
+          <p key={`paragraph${index}`} className='coin-description-paragraph'>{paragraph.replace(/<\/?a[^>]*>/g, "")}</p>
         ))}
       </>
     );

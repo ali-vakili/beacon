@@ -1,3 +1,8 @@
+section.hero {
+  display: flex;
+  align-items: center;
+  min-height: 72vh;
+}
 section.hero div.content {
   position: relative;
   display: flex;
@@ -39,7 +44,6 @@ section.hero div.content div.intro {
 section.hero div.content div.intro h4.intro-text {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
-  color: #DCDCDC !important;
 }
 @media (max-width: 768px) {
   section.hero div.content div.intro h4.intro-text {

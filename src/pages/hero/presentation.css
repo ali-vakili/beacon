@@ -1,0 +1,92 @@
+div.presentation-content {
+  margin-top: 120px;
+}
+div.presentation-content div.presentation-title h1.display-5 {
+  font-weight: 800;
+}
+@media (max-width: 992px) {
+  div.presentation-content div.presentation-title h1.display-5 {
+    font-size: calc(1rem + 2.6vw);
+  }
+}
+@media (max-width: 768px) {
+  div.presentation-content div.presentation-title h1.display-5 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  div.presentation-content div.presentation-title h1.display-5 {
+    font-size: calc(1rem + 2.8vw);
+  }
+}
+div.presentation-content div.page-preview {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  div.presentation-content div.page-preview {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  div.presentation-content div.page-preview {
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+div.presentation-content div.page-preview.left {
+  flex-direction: row-reverse;
+}
+div.presentation-content div.page-preview div.page-preview-image {
+  align-self: flex-end;
+}
+div.presentation-content div.page-preview div.page-preview-image img.preview-image {
+  max-height: 497px;
+  max-width: 402px;
+}
+div.presentation-content div.page-preview div.page-preview-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 1025px) {
+  div.presentation-content div.page-preview div.page-preview-about {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  div.presentation-content div.page-preview div.page-preview-about {
+    margin: 0px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 768px) {
+  div.presentation-content div.page-preview div.page-preview-about {
+    margin-top: 32px;
+  }
+}
+div.presentation-content div.page-preview div.page-preview-about h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  div.presentation-content div.page-preview div.page-preview-about h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  div.presentation-content div.page-preview div.page-preview-about h2 {
+    font-size: calc(1rem + 1.8vw);
+  }
+}
+div.presentation-content div.page-preview div.page-preview-about p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 1024px) {
+  div.presentation-content div.page-preview div.page-preview-about p {
+    font-size: 16px !important;
+  }
+}

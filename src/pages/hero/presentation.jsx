@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import './presentation.css'
 
 const Presentation = ({ presentation }) => {
   const{ presentations_title, title, textTitle, text, image, side } = presentation
-  console.log(title, textTitle, text, image, side)
   return ( 
     <div className="presentation-content">
       <div className='presentation-title'>

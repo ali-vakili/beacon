@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Button from '../../components/ui/button'
 import market from './image/Market-Mockup-Hero.png'
 import detail from './image/Detail-Mockup-Hero.png'
@@ -8,7 +8,7 @@ import './hero.css'
 
 const Hero = () => {
   document.title = 'Beacon | Cryptocurrency Market | Stay on Track | Check Crypto Prices';
-  const [presentations, setPresentations] = useState(
+  const [presentations] = useState(
     [
       {
         presentations_title:"detail_presentation",

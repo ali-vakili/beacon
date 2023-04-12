@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../assets/css/search.css'
 
 const Search = ({ get }) => {
   const [value, setValue] = useState('');
 
   const handleChange = (event) => {
-    setValue(event.target.value);
+    setValue(event.target.value.trim());
   }
 
   return ( 

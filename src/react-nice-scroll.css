@@ -3,6 +3,10 @@
   display: block;
   position: relative;
 }
+
+.touch-screen{
+  overflow: initial !important;
+}
   
 .scroll-content {
   display: flow-root;

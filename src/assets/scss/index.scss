@@ -10,8 +10,17 @@ div.container-beacon{
 
   section.section-beacon{
     width: 100%;
-    max-width: 1396px;
+    max-width: 1660px;
     margin: auto;
+    margin-top: 40px;
+
+    @include media(">1660px"){
+      padding-inline: 120px;
+    }
+
+    @include media("<=1660px"){
+      max-width: 1396px;
+    }
 
     @include media("<=1636px"){
       width: inherit;

@@ -34,6 +34,10 @@ input {
   outline: none !important;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -77,8 +81,19 @@ div.container-beacon {
 }
 div.container-beacon section.section-beacon {
   width: 100%;
-  max-width: 1396px;
+  max-width: 1660px;
   margin: auto;
+  margin-top: 40px;
+}
+@media (min-width: 1661px) {
+  div.container-beacon section.section-beacon {
+    padding-inline: 120px;
+  }
+}
+@media (max-width: 1660px) {
+  div.container-beacon section.section-beacon {
+    max-width: 1396px;
+  }
 }
 @media (max-width: 1636px) {
   div.container-beacon section.section-beacon {

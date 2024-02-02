@@ -16,7 +16,7 @@ class CoinDetail extends Component {
       <div className='coin-details'>
         <div className="coin-detail-container indicator-beacon">
           <div className='coin-detail'>
-            <CoinBasics  market_data={market_data} coinData={coinData}/>
+            <CoinBasics market_data={market_data} coinData={coinData}/>
             <CoinInformation market_data={market_data} coinData={coinData} />
           </div>
         </div>

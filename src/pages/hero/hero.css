@@ -1,7 +1,16 @@
 section.hero {
   display: flex;
   align-items: center;
-  min-height: 72vh;
+}
+@media (min-width: 992px) {
+  section.hero {
+    min-height: 520px;
+  }
+}
+@media (min-width: 1600px) {
+  section.hero {
+    margin-top: 120px !important;
+  }
 }
 section.hero div.content {
   position: relative;
@@ -61,7 +70,7 @@ section.hero div.content div.hero-preview {
 @media (min-width: 992px) {
   section.hero div.content div.hero-preview {
     position: absolute;
-    right: -16%;
+    right: -14%;
     z-index: -1;
     margin-top: 20px !important;
   }

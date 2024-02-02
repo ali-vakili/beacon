@@ -36,6 +36,10 @@ input{
   outline: none !important;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

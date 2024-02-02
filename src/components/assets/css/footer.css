@@ -2,7 +2,22 @@ footer.footer-beacon {
   width: 100%;
   max-width: 1396px;
   margin: 0 auto;
+  border-top: 1px solid #363947;
+  padding-top: 32px;
   margin-top: 60px !important;
+}
+footer.footer-beacon .general-links {
+  display: flex;
+}
+footer.footer-beacon ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+footer.footer-beacon ul li a {
+  font-size: 16px !important;
+  transition: color 400ms ease;
+}
+footer.footer-beacon ul li a:hover, footer.footer-beacon ul li a:focus {
+  color: #FAFAFA !important;
 }
 @media (max-width: 1636px) {
   footer.footer-beacon {

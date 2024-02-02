@@ -11,23 +11,26 @@ div.header header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 120px;
+  margin-inline: auto;
+  max-width: 1920px;
+  padding-inline: 120px;
   padding-top: 44px;
 }
 @media (max-width: 1200px) {
   div.header header {
-    margin: 0 80px;
+    padding-inline: 80px;
   }
 }
 @media (max-width: 1024px) {
   div.header header {
-    margin: 0 60px;
+    padding-inline: 60px;
   }
 }
 @media (max-width: 576px) {
   div.header header {
     width: 90%;
     margin: 0 auto;
+    padding-inline: 0;
   }
 }
 div.header header div.beacon-logo {

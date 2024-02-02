@@ -1,0 +1,42 @@
+.beacon-accordion {
+  border-bottom: 1px solid #363947;
+  transition: all 300ms ease;
+}
+
+.accordion:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.accordion-control {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #FAFAFA;
+}
+.accordion-control .accordion-title {
+  color: #9F9F9F;
+  font-size: 20px;
+  transition: all 300ms ease-out;
+  text-align: left;
+}
+
+.accordion-expand {
+  color: #FAFAFA !important;
+}
+
+.description {
+  display: flex;
+  overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  transition: all 300ms ease-out;
+}
+
+.chevron {
+  transform-origin: center;
+  transition: all 200ms ease-out;
+}
+
+.chevron-expand {
+  transform: rotate(180deg);
+}

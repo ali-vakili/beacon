@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import Button from '../../components/ui/button'
 import Presentation from './presentation'
+import Community from './Community';
+import Statistics from './Statistics';
+
+import Button from '../../components/ui/button'
 
 import market from './image/Market-Mockup-Hero.png'
 import detail from './image/Detail-Mockup-Hero.png'
 import explore from './image/Explore-Mockup-Hero.png'
 
-import Community from './Community';
 import './hero.css'
 
 const Hero = () => {
@@ -58,6 +60,9 @@ const Hero = () => {
         {presentations.map(presentation =>(
           <Presentation key={presentation.presentations_title} presentation={presentation}/>
         ))}
+      </section>
+      <section className='statistics section-beacon'>
+        <Statistics />
       </section>
       <section className='community section-beacon'>
         <Community />

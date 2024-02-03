@@ -1,4 +1,4 @@
-import communityBackground from "./svg/community-background.svg"
+import CommunityBackground from "./CommunityBackground"
 import GooglePlay from "./svg/GooglePlay_Black.svg"
 import AppStore from "./svg/AppStore_Black.svg"
 
@@ -19,7 +19,8 @@ const Community = () => {
         </div>
       </div>
       <div className="community-background">
-        <img id="community_background" src={communityBackground} alt="community background" loading="lazy"/>
+        {/* <img id="community_background" src={communityBackground} alt="community background" loading="lazy"/> */}
+        <CommunityBackground />
       </div>
       
     </div>

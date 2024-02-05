@@ -29,10 +29,10 @@ const Statistics = () => {
       <motion.div className="numbers w-100 mb-3 row" whileInView={() => setStartCounters(true)} viewport={{ once: true }}>
         {statistics.map(({ id, subject, start, end, symbol }) => (
           startCounters && (
-            <div className="statistic col-md-3 col-6">
+            <div className="statistic col-6">
               <div className='count-up'>
-                  <CountUp className='number' start={start} end={end} duration={4}/>
-                  <span className='number'>{symbol}</span>
+                <CountUp key={id} className='number' start={start} end={end} duration={4}/>
+                <span className='number'>{symbol}</span>
               </div>
               <h4 className="subject">{subject}</h4>
             </div>

@@ -44,12 +44,18 @@
   flex-grow: 1;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (min-width: 769px) {
+  .statistics .statistic {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
   .statistics .statistic:not(:nth-child(2), :last-child) {
     border-right: 1px solid #363947 !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .statistics .statistic:not(:last-child) {
     border-right: 1px solid #363947;
   }

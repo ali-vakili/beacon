@@ -1,6 +1,7 @@
 @media (max-width: 576px) {
   .community {
     width: 100% !important;
+    overflow: hidden;
   }
 }
 
@@ -21,15 +22,20 @@
     margin-top: 6rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .community-content {
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-@media (min-width: 801px) {
+@media (min-width: 1025px) {
   .community-content {
     padding-left: 4rem;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .community-content {
+    padding-left: 2rem;
   }
 }
 .community-content .community-apps {
@@ -45,7 +51,7 @@
 .community-content .community-title {
   font-weight: 600;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .community-content .community-title {
     width: 100%;
     text-align: center;
@@ -60,26 +66,15 @@
   max-width: 580px;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 @media (max-width: 800px) {
   .community-content .community-background #community_background {
-    display: none;
-    max-width: unset;
-  }
-}
-@media (max-width: 800px) {
-  .community-content .community-background #community_background {
-    display: none;
     max-width: unset;
   }
 }
 .community-content .community-background #community_background_mobile {
   width: 100%;
   height: auto;
-  display: none;
-}
-@media (max-width: 800px) {
-  .community-content .community-background #community_background_mobile {
-    display: block;
-  }
+  overflow: hidden;
 }

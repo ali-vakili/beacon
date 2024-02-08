@@ -1,0 +1,210 @@
+@media (max-width: 576px) {
+  .platform {
+    width: 100% !important;
+  }
+}
+
+.content {
+  margin-top: 112px;
+}
+@media (max-width: 480px) {
+  .content {
+    margin-top: 96px;
+  }
+}
+.content .title {
+  color: #FBBE85;
+  font-weight: 800;
+}
+@media (max-width: 480px) {
+  .content .title {
+    font-size: 16px;
+  }
+}
+.content h2.content-title {
+  margin-bottom: 64px;
+}
+@media (max-width: 1024px) {
+  .content h2.content-title {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .content h2.content-title {
+    display: none;
+  }
+}
+.content h3.content-title {
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.33;
+}
+@media (max-width: 480px) {
+  .content h3.content-title {
+    display: block !important;
+  }
+}
+.content .journeys {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+@media (max-width: 1024px) {
+  .content .journeys {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.content .journeys .journey {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-inline: 44px;
+  padding-bottom: 44px;
+  border: 2px solid #1e2029;
+  border-radius: 24px;
+  width: 100%;
+  min-height: 558px;
+}
+@media (max-width: 1024px) {
+  .content .journeys .journey {
+    flex-direction: row;
+    justify-content: stretch;
+    min-height: auto;
+    padding: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey {
+    flex-direction: column;
+    padding: 24px;
+  }
+}
+.content .journeys .journey .journey-subjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  width: 100%;
+}
+@media (max-width: 1024px) and (min-width: 481px) {
+  .content .journeys .journey .journey-subjects {
+    width: 66.66666667%;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .journey-subjects {
+    width: 100%;
+  }
+}
+.content .journeys .journey .journey-subjects .journey-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+@media (max-width: 1024px) {
+  .content .journeys .journey .journey-subjects .journey-title {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .content .journeys .journey .journey-subjects .journey-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .journey-subjects .journey-title {
+    margin-bottom: 8px;
+  }
+}
+.content .journeys .journey .journey-subjects .journey-sub-title {
+  font-weight: 600;
+  line-height: 1.33;
+}
+@media (max-width: 768px) {
+  .content .journeys .journey .journey-subjects .journey-sub-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .journey-subjects .journey-sub-title {
+    margin-bottom: 24px;
+  }
+}
+.content .journeys .journey .journey-subjects .start-coverage-mobile {
+  font-size: 16px;
+}
+@media (min-width: 1025px) {
+  .content .journeys .journey .journey-subjects .start-coverage-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .journey-subjects .start-coverage-mobile {
+    display: none !important;
+  }
+}
+.content .journeys .journey .options {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 100%;
+  gap: 24px;
+}
+@media (max-width: 1024px) {
+  .content .journeys .journey .options {
+    width: 33.33333333%;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .options {
+    width: 100%;
+  }
+}
+.content .journeys .journey .options .option {
+  display: flex;
+  gap: 12px;
+  color: #FAFAFA;
+}
+.content .journeys .journey .options .option h4 {
+  font-weight: 800;
+}
+@media (max-width: 1024px) {
+  .content .journeys .journey .options .option h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .content .journeys .journey .options .option h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.content .journeys .journey .options .option svg {
+  flex-shrink: 0;
+  height: 24px !important;
+  width: 24px !important;
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .options .option svg {
+    height: 16px !important;
+    width: 16px !important;
+  }
+}
+@media (max-width: 1024px) and (min-width: 481px) {
+  .content .journeys .journey .start-coverage {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .content .journeys .journey .start-coverage {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+  .content .journeys .journey .start-coverage svg {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}

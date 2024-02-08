@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Presentation from './presentation'
 import Community from './Community';
 import Statistics from './Statistics';
+import MarketCoverage from './MarketCoverage';
+import Providers from "./Providers"
+import Platform from './Platform';
 
 import Button from '../../components/ui/button'
 
@@ -64,6 +67,13 @@ const Hero = () => {
       <section className='statistics section-beacon'>
         <Statistics />
       </section>
+      <section className='platform section-beacon'>
+        <Platform />
+      </section>
+      <section className='market-coverage section-beacon'>
+        <MarketCoverage />
+      </section>
+      <Providers />
       <section className='community section-beacon'>
         <Community />
       </section>

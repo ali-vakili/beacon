@@ -51,6 +51,7 @@ div.header header a.p-link {
   padding: 6px 24px;
   border: 1px #4D4D4D solid;
   border-radius: 8px;
+  color: #9F9F9F;
   transition: background-color 400ms ease-out, border 400ms ease-out, color 400ms ease;
 }
 div.header header a.p-link:focus {

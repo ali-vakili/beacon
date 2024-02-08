@@ -13,13 +13,13 @@
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 6rem;
   margin-inline: 0;
   background-color: #FBBE85;
 }
 @media (min-width: 426px) {
   .community-content {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 }
 @media (max-width: 768px) {

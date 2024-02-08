@@ -23,7 +23,7 @@ a {
   font-weight: 600;
   font-size: 20px;
   text-decoration: none !important;
-  color: #9F9F9F !important;
+  color: #9F9F9F;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;

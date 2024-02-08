@@ -15,6 +15,7 @@ footer.footer-beacon ul li:not(:last-child) {
 footer.footer-beacon ul li a {
   font-size: 16px !important;
   transition: color 400ms ease;
+  color: #9F9F9F;
 }
 footer.footer-beacon ul li a:hover, footer.footer-beacon ul li a:focus {
   color: #FAFAFA !important;

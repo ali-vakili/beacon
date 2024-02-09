@@ -11,24 +11,18 @@
   }
 }
 .market-coverage-content .title {
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 12px;
   color: #FBBE85;
 }
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
   .market-coverage-content .title {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .market-coverage-content .sub-title {
   font-weight: 600;
-  font-size: 36px;
   line-height: 1.33;
-}
-@media (max-width: 1024px) {
-  .market-coverage-content .sub-title {
-    font-size: 24px;
-  }
 }
 @media (max-width: 768px) {
   .market-coverage-content .sub-title {
@@ -37,7 +31,7 @@
 }
 @media (max-width: 480px) {
   .market-coverage-content .sub-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .market-coverage-content .coverage {
@@ -62,7 +56,7 @@
 }
 @media (max-width: 480px) {
   .market-coverage-content .coverage {
-    height: 100px;
+    height: 112px;
   }
 }
 .market-coverage-content .coverage h4 {

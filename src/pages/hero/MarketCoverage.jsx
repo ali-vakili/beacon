@@ -4,7 +4,7 @@ const MarketCoverage = () => {
   return (
     <>
       <div className="market-coverage-content row w-100 align-items-center mx-0">
-        <div className="col-md-6 p-0 pe-5">
+        <div className="col-md-6 p-0 pe-sm-5 pe-3">
           <h5 className="title">Market Coverage</h5>
           <h2 className="sub-title">Your guiding light through the intricate maze of financial markets.</h2>
         </div>
